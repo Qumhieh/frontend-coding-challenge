@@ -42,7 +42,10 @@ h4 {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-transform: uppercase;
+  text-decoration: none;
 }
+
 .btn:hover {
   border-color: #646cff;
 }
@@ -82,6 +85,7 @@ h4 {
   left: 50%; 
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  box-sizing: border-box;
 }
 
 /***** HEADER *****/
@@ -96,6 +100,7 @@ header ul {
   min-width: 320px; 
   padding: 1em;
   text-align: center;
+  box-sizing: border-box;
 }
 
 header ul li {
@@ -142,14 +147,14 @@ header ul a.active {
   max-width: 1024px;
   min-width: 320px;
   height: 100%;
-  margin: 0 auto;;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1em;
 }
 
 #tab-content > div:NOT(.active) {
   display: none;
 }
-
-/***** HOME PAGE *****/
 
 /***** MEDIA QUERIES *****/
 @media (min-width: 640px) {

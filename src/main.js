@@ -4,6 +4,7 @@
 
 import { initTabsOnClickEvent } from './tabs.js'
 import { initHomePage } from './home/home.js'
+import { initOffersPage } from './offers/offers.js'
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -23,3 +24,6 @@ initTabsOnClickEvent();
 
 // home page
 initHomePage();
+
+// offers page
+initOffersPage();

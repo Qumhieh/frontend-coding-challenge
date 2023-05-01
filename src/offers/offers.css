@@ -1,0 +1,75 @@
+#offers .offers-wrapper {
+    margin: 0 auto;
+    display: grid;
+    gap: 1em;
+}
+
+#offers .hotel-container {
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 5px #5555554a;
+    overflow: hidden;
+    transition-property: transform, box-shadow;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+}
+
+#offers .hotel-container:HOVER {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 10px #5555554a
+}
+
+#offers .hotel-container .hotel-header {
+    background-color: #e0e0e0;
+    width: 100%;
+    padding-top: 60%;
+    position: relative;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#offers .hotel-container .hotel-price {
+    float: right;
+    line-height: 1.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background: #005eb8;
+    color: #fff;
+    padding: 0 0.6em;
+}
+
+#offers .hotel-container .hotel-body {
+    padding: 0.6em;
+    color: #1a1a1a;
+}
+
+#offers .hotel-container h4, #offers .hotel-container h5 {
+    margin: 0px;
+}
+
+#offers .hotel-container h5 {
+    font-weight: normal;
+}
+
+#offers .load-offers {
+    text-align: center;
+    margin-top: 3em;
+}
+
+@media (min-width: 460px) {
+    #offers .offers-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 720px) and (max-width: 920px) {
+    #offers .offers-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 921px) {
+    #offers .offers-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
