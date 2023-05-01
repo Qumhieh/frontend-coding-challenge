@@ -11,10 +11,41 @@
     <meta name="msapplication-TileColor" content="#005eb8" />
     <meta name="theme-color" content="#005eb8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex">
     <title>Amadeus - Frontend Coding Challenge</title>
+
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="main-container">
+      <div id="main-wrapper">
+        <div class="header">
+          <header>
+            <ul class="nav">
+              <li class="logo"><img src="./public/amadeus-logo-icon.png" /></li>
+              <li class="nav-tab"><a class="active" href="#home">Home</a></li>
+              <li class="nav-tab"><a href="#offers">Offers</a></li>
+              <li class="nav-tab"><a href="#map">Map</a></li>
+              <li class="nav-tab"><a href="#contact_us">Contact us</a></li>
+            </ul>
+          </header>
+        </div>
+
+        <div class="body">
+          <section id="tab-content">
+            <div id="home" class="active">Home</div>
+            <div id="offers">Offers</div>
+            <div id="map">Map</div>
+            <div id="contact_us">Contact us</div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div id="app"></div> -->
+
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
