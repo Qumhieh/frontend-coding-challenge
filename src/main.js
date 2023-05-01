@@ -5,6 +5,7 @@
 import { initTabsOnClickEvent } from './tabs.js'
 import { initHomePage } from './home/home.js'
 import { initOffersPage } from './offers/offers.js'
+import { initContactUsPage } from './contact-us/contact-us.js'
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -27,3 +28,6 @@ initHomePage();
 
 // offers page
 initOffersPage();
+
+// contact us page
+initContactUsPage();

@@ -54,6 +54,25 @@ h4 {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input, textarea {
+  width: 100%;
+  padding: 0.6em;
+  box-sizing: border-box;
+  background: #f5f5f5 !important;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #1a1a1a
+}
+
+input:FOCUS, textarea:FOCUS {
+  border-color: #005eb8;
+  outline: none;
+}
+
+.required {
+  color: #f78080;
+}
+
 /***** MAIN CONTAINER *****/
 #main-container {
   margin: 0 auto;

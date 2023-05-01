@@ -1,0 +1,44 @@
+#contact-us {
+    width: 100%;
+    height: 100%;
+}
+
+#contact-us .centered-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 1em;
+    min-width: 270px;
+}
+
+#contact-us .contact-us-wrapper {
+    padding: 2em;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    color: #777;
+}
+
+#contact-us .contact-us-wrapper h2 {
+    border-bottom: 1px solid #ccc;
+    color: #777;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+#contact-us .content-wrapper {
+    margin-top: 1em;;
+}
+
+#contact-us .content-wrapper label {
+    line-height: 2em;
+}
+
+#contact-us .content-wrapper .btn {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    #contact-us .centered-container {
+        width: 60%;
+    }
+}
