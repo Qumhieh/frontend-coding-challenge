@@ -2,6 +2,8 @@
 // import amadeusLogo from '/amadeus-logo-icon.png'
 // import { setupCounter } from './counter.js'
 
+import { initTabsOnClickEvent } from './tabs.js'
+
 // document.querySelector('#app').innerHTML = `
 //   <div>
 //     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
@@ -15,3 +17,5 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
+
+initTabsOnClickEvent();
