@@ -3,6 +3,7 @@
 // import { setupCounter } from './counter.js'
 
 import { initTabsOnClickEvent } from './tabs.js'
+import { initHomePage } from './home/home.js'
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -19,3 +20,6 @@ import { initTabsOnClickEvent } from './tabs.js'
 // setupCounter(document.querySelector('#counter'))
 
 initTabsOnClickEvent();
+
+// home page
+initHomePage();

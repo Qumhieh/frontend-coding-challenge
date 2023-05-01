@@ -1,0 +1,15 @@
+#home {
+    text-align: center;
+}
+
+#home h1, #home h4 {
+    text-shadow: 1px 1px 2px #303030;
+}
+
+#home .see-offers a {
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 40%;
+    display: inline-block;
+    margin-top: 1em;
+}
