@@ -1,4 +1,5 @@
 import './offers.css';
+import { loadImage } from '../unsplsh-image-loader.js';
 
 const hotelsMock = [
     {
@@ -44,21 +45,24 @@ const hotelsMock = [
 ];
 
 export function initOffersPage() {
-    let hotelsHtml = '';
-    hotelsMock.forEach((hotel) => {
-        hotelsHtml += buildHotelContainer(hotel);
+    loadImage(`photos/random?orientation=landscape&query=greece&count=${hotelsMock.length}`).then((response) => {
+        let hotelsHtml = '';
+        hotelsMock.forEach((hotel, i) => {
+            hotelsHtml += buildHotelContainer(hotel, response.data[i]);
+        });
+    
+        document.querySelector('#offers').innerHTML = `
+            <div class="offers-wrapper">${hotelsHtml}</div>
+            <div class="load-offers"><a class="btn" href="#load-offers">Load more offers</a></div>
+        `; 
     });
-
-    document.querySelector('#offers').innerHTML = `
-        <div class="offers-wrapper">${hotelsHtml}</div>
-        <div class="load-offers"><a class="btn" href="#load-offers">Load more offers</a></div>
-    `; 
 }
 
-function buildHotelContainer(hotel) {
+function buildHotelContainer(hotel, image) {
     return `
         <div class='hotel-container'>
-            <div class='hotel-header'> 
+            <div class='hotel-header'>
+                <img src="${image.urls.small}" />
             </div>
             <div class='hotel-body'>
                 <h4>${hotel.name}<span class="hotel-price">${hotel.price} $</span></h4>

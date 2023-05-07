@@ -77,7 +77,6 @@ input:FOCUS, textarea:FOCUS {
 #main-container {
   margin: 0 auto;
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixid=Mnw0NDI3OTB8MHwxfGFsbHx8fHx8fHx8fDE2ODI5Mjc3NTU&ixlib=rb-4.0.3");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
